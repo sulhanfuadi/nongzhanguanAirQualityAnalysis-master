@@ -46,6 +46,25 @@ These findings imply that while temperature is an important meteorological facto
 
 Understanding this weak correlation helps us focus on identifying and mitigating the primary sources of PM2.5 pollution. It suggests that efforts to improve air quality should prioritize controlling emissions from key sources rather than relying solely on temperature-related interventions.
 
+## Analysis Techniques and Objectives
+
+The following techniques were used to achieve the project objectives:
+
+1. **Time Series Analysis**:
+   - **Purpose**: To understand the temporal patterns and trends in PM2.5 levels from 2013 to 2017.
+   - **Implementation**: Monthly and annual resampling of PM2.5 data to identify periods of significant pollution spikes and troughs.
+   - **Objective**: Provide insights into seasonal variations and identify any long-term trends.
+
+2. **Correlation Analysis**:
+   - **Purpose**: To examine the relationship between PM2.5 levels and temperature.
+   - **Implementation**: Using scatter plots and a correlation matrix to quantify the degree of association between the two variables.
+   - **Objective**: Determine if temperature significantly influences PM2.5 levels and identify potential confounding factors.
+
+3. **Data Visualization**:
+   - **Purpose**: To effectively communicate findings and highlight critical trends.
+   - **Implementation**: Line plots for PM2.5 trends, dual-axis plots for annual trends of PM2.5 and temperature, and heatmaps for correlation analysis.
+   - **Objective**: Enhance the interpretability of the data and facilitate decision-making through clear visual representation.
+
 ## Dataset
 
 The dataset used in this analysis was sourced from a reliable repository and preprocessed to ensure data integrity. It includes detailed hourly air quality measurements and meteorological data.
