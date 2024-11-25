@@ -45,7 +45,7 @@ st.write("""
 
 # Load the dataset
 st.subheader('Load the Air Quality Dataset')
-data_url = './PRSA_Data_Nongzhanguan_20130301-20170228.csv'
+data_url = './data/PRSA_Data_Nongzhanguan_20130301-20170228.csv'
 data = pd.read_csv(data_url)
 st.write('Preview of the dataset:')
 st.write(data.head())
