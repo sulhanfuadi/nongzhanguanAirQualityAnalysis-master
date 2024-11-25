@@ -28,6 +28,12 @@ data = pd.read_csv(data_url)
 st.subheader('Preview of the dataset:')
 st.write(data.head())
 
+# Cleaning the data by handling missing values
+# Missing values will be handled using forward fill, and a datetime index will be created.
+data['datetime'] = pd.to_datetime(data[['year', 'month', 'day', 'hour']])
+data.set_index('datetime', inplace=True)
+data_cleaned = data.fillna(method='ffill')
+
 # Exploratory Data Analysis (EDA)
 st.header('Exploratory Data Analysis (EDA)')
 
