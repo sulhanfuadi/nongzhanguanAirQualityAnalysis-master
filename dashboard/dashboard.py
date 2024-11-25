@@ -25,7 +25,7 @@ This project analyzes air quality at Nongzhanguan Station from 2013 to 2017, foc
 # Load the dataset
 data_url = './data/PRSA_Data_Nongzhanguan_20130301-20170228.csv'
 data = pd.read_csv(data_url)
-st.subheader('Preview of the dataset:')
+st.subheader('Data Overview')
 st.write(data.head())
 
 # Cleaning the data by handling missing values
