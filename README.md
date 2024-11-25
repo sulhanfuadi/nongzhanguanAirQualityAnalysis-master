@@ -96,6 +96,40 @@ Open the Jupyter Notebook to explore the detailed analysis:
 jupyter notebook notebook_nongzhanguanAirQualityAnalysis.ipynb
 ```
 
+## How to Run the Dashboard
+
+### Setting Up the Environment - Anaconda
+1. Create and activate a new environment with Python 3.9:
+    ```bash
+    conda create --name main-ds python=3.9
+    conda activate main-ds
+    pip install -r requirements.txt
+    ```
+
+### Setting Up the Environment - Shell/Terminal
+1. Create a project directory and navigate into it:
+    ```bash
+    mkdir data_analysis_project
+    cd data_analysis_project
+    ```
+2. Install dependencies using pipenv:
+    ```bash
+    pipenv install
+    pipenv shell
+    pip install -r requirements.txt
+    ```
+
+### Launch the Streamlit App
+1. To start the dashboard, use the following command:
+    ```bash
+    streamlit run dashboard.py
+    ```
+
+This will launch the Streamlit app, and you can access the interactive dashboard through your browser.
+
+### Access the Streamlit App Online:
+- Visit https://nongzhanguan-airquality.streamlit.app/ for interactive visualizations.
+
 ## Results
 
 The analysis provides insights into:
