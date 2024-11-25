@@ -23,36 +23,10 @@ This project analyzes air quality at Nongzhanguan Station from 2013 to 2017, foc
 """)
 
 # Load the dataset
-st.subheader('Load the Air Quality Dataset')
 data_url = './data/PRSA_Data_Nongzhanguan_20130301-20170228.csv'
 data = pd.read_csv(data_url)
-st.write('Preview of the dataset:')
+st.subheader('Preview of the dataset:')
 st.write(data.head())
-
-# Data Wrangling Section
-st.header('Data Wrangling')
-
-# Gathering Data
-st.subheader('Gathering Data')
-st.write("We will gather the dataset, which includes air quality measurements for pollutants and environmental factors.")
-
-# Missing Data Analysis
-st.subheader('Assessing Data')
-st.write("Checking for missing values and ensuring data quality.")
-missing_values = data.isnull().sum()
-st.write('Missing values in the dataset:')
-st.write(missing_values)
-
-# Cleaning the data by handling missing values
-st.subheader('Cleaning Data')
-st.write("""
-Missing values will be handled using forward fill, and a datetime index will be created.
-""")
-data['datetime'] = pd.to_datetime(data[['year', 'month', 'day', 'hour']])
-data.set_index('datetime', inplace=True)
-data_cleaned = data.fillna(method='ffill')
-st.write('Preview of cleaned data:')
-st.write(data_cleaned.head())
 
 # Exploratory Data Analysis (EDA)
 st.header('Exploratory Data Analysis (EDA)')
