@@ -11,7 +11,7 @@ st.set_page_config(page_title="Air Quality Analysis at Nongzhanguan Station (201
 st.title('Air Quality Analysis at Nongzhanguan Station (2013-2017)')
 st.write("""
 **Author**: [Sulhan Fuadi](https://www.linkedin.com/in/sulhanfuadi/) \n
-**GitHub**: [Sulhan Fuadi](https://github.com/sulhanfuadi)
+**GitHub**: [@sulhanfuadi](https://github.com/sulhanfuadi)
 """)
 
 # Project Overview
